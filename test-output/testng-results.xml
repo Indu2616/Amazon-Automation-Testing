@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="1" total="8" passed="0" failed="1" skipped="5">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-29T17:56:09 IST" name="Default suite" finished-at="2024-07-29T17:56:34 IST" duration-ms="25128">
+    <groups>
+    </groups>
+    <test started-at="2024-07-29T17:56:09 IST" name="Default test" finished-at="2024-07-29T17:56:34 IST" duration-ms="25128">
+      <class name="tests.AddingTodayDealsWithCategories">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AddingTodayDealsWithCategories@537f60bf]" started-at="2024-07-29T17:56:09 IST" name="setup" finished-at="2024-07-29T17:56:14 IST" duration-ms="4391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="testOpenTodayDeals()[pri:0, instance:tests.AddingTodayDealsWithCategories@537f60bf]" started-at="2024-07-29T17:56:14 IST" name="testOpenTodayDeals" finished-at="2024-07-29T17:56:24 IST" duration-ms="10351" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //a[@href='/gp/goldbox?ref_=nav_cs_gb' and normalize-space(text())="Today's Deals"] (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[@href='/gp/goldbox?ref_=nav_cs_gb' and normalize-space(text())="Today's Deals"] (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pages.BasePage.findElement(BasePage.java:21)
+at pages.BasePage.clickElement(BasePage.java:25)
+at pages.HomePage.clickTodayDealsBtn(HomePage.java:23)
+at tests.AddingTodayDealsWithCategories.testOpenTodayDeals(AddingTodayDealsWithCategories.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.72)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eb9d8be78748cdda73e4f5d637738394, findElement {using=xpath, value=//a[@href='/gp/goldbox?ref_=nav_cs_gb' and normalize-space(text())="Today's Deals"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\indui\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55721}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55721/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eb9d8be78748cdda73e4f5d637738394
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpenTodayDeals -->
+        <test-method signature="testOpenTodayDeals()[pri:0, instance:tests.AddingTodayDealsWithCategories@537f60bf]" started-at="2024-07-29T17:56:24 IST" name="testOpenTodayDeals" finished-at="2024-07-29T17:56:34 IST" duration-ms="10230" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //a[@href='/gp/goldbox?ref_=nav_cs_gb' and normalize-space(text())="Today's Deals"] (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[@href='/gp/goldbox?ref_=nav_cs_gb' and normalize-space(text())="Today's Deals"] (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pages.BasePage.findElement(BasePage.java:21)
+at pages.BasePage.clickElement(BasePage.java:25)
+at pages.HomePage.clickTodayDealsBtn(HomePage.java:23)
+at tests.AddingTodayDealsWithCategories.testOpenTodayDeals(AddingTodayDealsWithCategories.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.72)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eb9d8be78748cdda73e4f5d637738394, findElement {using=xpath, value=//a[@href='/gp/goldbox?ref_=nav_cs_gb' and normalize-space(text())="Today's Deals"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\indui\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55721}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55721/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eb9d8be78748cdda73e4f5d637738394
+at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpenTodayDeals -->
+        <test-method signature="testSelectCategories()[pri:0, instance:tests.AddingTodayDealsWithCategories@537f60bf]" started-at="2024-07-29T17:56:34 IST" name="testSelectCategories" finished-at="2024-07-29T17:56:34 IST" depends-on-methods="tests.AddingTodayDealsWithCategories.testOpenTodayDeals" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.AddingTodayDealsWithCategories.testSelectCategories() on instance tests.AddingTodayDealsWithCategories@537f60bf depends on not successfully finished methods 
+[tests.AddingTodayDealsWithCategories.testOpenTodayDeals() on instance tests.AddingTodayDealsWithCategories@537f60bf]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.AddingTodayDealsWithCategories.testSelectCategories() on instance tests.AddingTodayDealsWithCategories@537f60bf depends on not successfully finished methods 
+[tests.AddingTodayDealsWithCategories.testOpenTodayDeals() on instance tests.AddingTodayDealsWithCategories@537f60bf]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSelectCategories -->
+        <test-method signature="testSelectFourthPage()[pri:0, instance:tests.AddingTodayDealsWithCategories@537f60bf]" started-at="2024-07-29T17:56:34 IST" name="testSelectFourthPage" finished-at="2024-07-29T17:56:34 IST" depends-on-methods="tests.AddingTodayDealsWithCategories.testSelectCategories" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.AddingTodayDealsWithCategories.testSelectFourthPage() on instance tests.AddingTodayDealsWithCategories@537f60bf depends on not successfully finished methods 
+[tests.AddingTodayDealsWithCategories.testSelectCategories() on instance tests.AddingTodayDealsWithCategories@537f60bf]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.AddingTodayDealsWithCategories.testSelectFourthPage() on instance tests.AddingTodayDealsWithCategories@537f60bf depends on not successfully finished methods 
+[tests.AddingTodayDealsWithCategories.testSelectCategories() on instance tests.AddingTodayDealsWithCategories@537f60bf]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSelectFourthPage -->
+        <test-method signature="testSelectProduct()[pri:0, instance:tests.AddingTodayDealsWithCategories@537f60bf]" started-at="2024-07-29T17:56:34 IST" name="testSelectProduct" finished-at="2024-07-29T17:56:34 IST" depends-on-methods="tests.AddingTodayDealsWithCategories.testSelectFourthPage" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.AddingTodayDealsWithCategories.testSelectProduct() on instance tests.AddingTodayDealsWithCategories@537f60bf depends on not successfully finished methods 
+[tests.AddingTodayDealsWithCategories.testSelectFourthPage() on instance tests.AddingTodayDealsWithCategories@537f60bf]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.AddingTodayDealsWithCategories.testSelectProduct() on instance tests.AddingTodayDealsWithCategories@537f60bf depends on not successfully finished methods 
+[tests.AddingTodayDealsWithCategories.testSelectFourthPage() on instance tests.AddingTodayDealsWithCategories@537f60bf]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSelectProduct -->
+        <test-method signature="testAddItemToCart()[pri:0, instance:tests.AddingTodayDealsWithCategories@537f60bf]" started-at="2024-07-29T17:56:34 IST" name="testAddItemToCart" finished-at="2024-07-29T17:56:34 IST" depends-on-methods="tests.AddingTodayDealsWithCategories.testSelectProduct" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.AddingTodayDealsWithCategories.testAddItemToCart() on instance tests.AddingTodayDealsWithCategories@537f60bf depends on not successfully finished methods 
+[tests.AddingTodayDealsWithCategories.testSelectProduct() on instance tests.AddingTodayDealsWithCategories@537f60bf]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.AddingTodayDealsWithCategories.testAddItemToCart() on instance tests.AddingTodayDealsWithCategories@537f60bf depends on not successfully finished methods 
+[tests.AddingTodayDealsWithCategories.testSelectProduct() on instance tests.AddingTodayDealsWithCategories@537f60bf]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddItemToCart -->
+        <test-method signature="testCheckItemAddedToCart()[pri:0, instance:tests.AddingTodayDealsWithCategories@537f60bf]" started-at="2024-07-29T17:56:34 IST" name="testCheckItemAddedToCart" finished-at="2024-07-29T17:56:34 IST" depends-on-methods="tests.AddingTodayDealsWithCategories.testAddItemToCart" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.AddingTodayDealsWithCategories.testCheckItemAddedToCart() on instance tests.AddingTodayDealsWithCategories@537f60bf depends on not successfully finished methods 
+[tests.AddingTodayDealsWithCategories.testAddItemToCart() on instance tests.AddingTodayDealsWithCategories@537f60bf]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.AddingTodayDealsWithCategories.testCheckItemAddedToCart() on instance tests.AddingTodayDealsWithCategories@537f60bf depends on not successfully finished methods 
+[tests.AddingTodayDealsWithCategories.testAddItemToCart() on instance tests.AddingTodayDealsWithCategories@537f60bf]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckItemAddedToCart -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.AddingTodayDealsWithCategories@537f60bf]" started-at="2024-07-29T17:56:34 IST" name="teardown" finished-at="2024-07-29T17:56:34 IST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.AddingTodayDealsWithCategories -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
