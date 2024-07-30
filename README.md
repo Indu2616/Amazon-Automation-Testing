@@ -21,7 +21,7 @@ Select "Headphones" and "Grocery" from the left side filters.
 Choose "10% off or more" from the discount part.
 go to the fourth page then select any item and add it to the cart.
 
-Skills
+Skills:
 Java
 Selenium
 TestNG
