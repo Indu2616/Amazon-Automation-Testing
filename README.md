@@ -1,4 +1,4 @@
-Amazon-Automation-Testing,
+Amazon-Automation-Testing
 
 
 This is a test automation project on Amazon website (E-commerce).
